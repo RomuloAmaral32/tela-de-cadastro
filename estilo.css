@@ -15,12 +15,12 @@ header{
     text-align: center;
     margin: 50px 300px 50px 300px;
     background-color: gray;
-    background-image: url(https://img.freepik.com/fotos-premium/vista-arafed-de-um-riacho-que-atravessa-uma-floresta-com-rochas-musgosas-generativas-ai_958078-5585.jpg);
+    background-image: url(https://i.pinimg.com/originals/dc/c0/05/dcc005602280b029f3a7464fcad642df.jpg);
     background-size: cover;
     border-radius: 60px;
     border: 2px solid yellow;
 }
-#entrada{
+.entrada{
     border-radius: 40px;
     font-size: large;
     cursor: pointer;
@@ -30,7 +30,7 @@ header{
     width: 500px;
     height: 30px;
 }
-#botao{
+.botao{
     color: azure;
     width: 100px;
     height: 50px;
