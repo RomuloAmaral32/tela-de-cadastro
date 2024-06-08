@@ -6,6 +6,8 @@ var quarto = document.getElementById("p4");
 var quinto = document.getElementById("p5");
 var sexto = document.getElementById("p6");
 var campinput = document.getElementsByClassName("entrada");
+let corpo= document.getElementById("areadetrabalho");
+var cabecalhopresente=false;
 
 function registro() {
     var todosPreenchidos = true;
@@ -65,5 +67,34 @@ function registro() {
             campinput[i].value = "";
         }
         zero.focus();
+        let tabela= `
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+        </tr>`
+        if (!cabecalhopresente) {
+            tabela = `
+            <table>
+            <tr ">
+                <th>Código do Produto</th>
+                <th>Marca do Produto</th>
+                <th>Tipo do Produto</th>
+                <th>Categoria do Produto</th>
+                <th>Preço Unitário do Produto</th>
+                <th>Custo do Produto</th>
+                <th>Observações</th>
+            </tr>` + tabela + `</table>`;
+            cabecalhopresente = true;
+        }
+
+       
+corpo.innerHTML += tabela;
     }
+    
+
 }

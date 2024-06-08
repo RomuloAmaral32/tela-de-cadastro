@@ -37,3 +37,14 @@ header{
     background-color: green;
     border-radius: 10px;
 }
+#cabeca{
+    color: white;
+    margin-left: 500px;
+    border: 2px solid rgb(255, 81, 0);
+
+} 
+table,td, tr, th{
+    color: white;
+    margin-left: 350px;
+    border: 2px solid rgb(255, 81, 0);
+}
