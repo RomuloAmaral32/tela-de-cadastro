@@ -44,7 +44,11 @@ header{
 
 } 
 table,td, tr, th{
-    color: white;
+    color: rgb(143, 42, 42);
     margin-left: 350px;
     border: 2px solid rgb(255, 81, 0);
+}
+#areadetrabalho{
+    margin: 40px 40px 40px 40px;
+    background-color: white;
 }
