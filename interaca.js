@@ -6,7 +6,6 @@ function registro() {
     var todosPreenchidos = true;
     var campos = Array.from(campinput);
 
-    // Verifica se todos os campos estão preenchidos
     campos.forEach(campo => {
         if (campo.value === "") {
             campo.style.border = "2px solid red";
@@ -17,7 +16,6 @@ function registro() {
     });
 
     if (todosPreenchidos) {
-        // Verifica se o código do produto já existe na tabela
         let codigoProduto = campos[0].value;
         let existeProduto = false;
 
@@ -46,6 +44,7 @@ function registro() {
             if (!cabecalhopresente) {
                 tabela = `
                 <table>
+                    <h3>Produtos Registrados:</h3>
                     <tr>
                         <th>Código do Produto</th>
                         <th>Marca do Produto</th>
